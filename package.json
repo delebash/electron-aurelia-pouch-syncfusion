@@ -23,8 +23,8 @@
     "url": "https://github.com/Oceanware/demoelectronaureliamongodb.git"
   },
   "devDependencies": {
-    "electron": "^1.4.1",
-    "electron-packager": "^8.0.0"
+    "electron": "^1.4.2",
+    "electron-packager": "^8.1.0"
   },
   "jspm": {
     "directories": {
