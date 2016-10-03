@@ -54,6 +54,11 @@
       "jquery-easing": "npm:jquery-easing@^0.0.1",
       "syncfusion-javascript": "github:syncfusion/JavaScript-Widgets@^14.3.49",
       "text": "github:systemjs/plugin-text@^0.0.9"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     }
   },
   "dependencies": {

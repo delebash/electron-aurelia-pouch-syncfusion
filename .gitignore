@@ -73,3 +73,8 @@ node_modules
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
 .idea/workspace.xml
+client/config/
+client/db/
+client/render/
+client/static/font/
+client/static/image/
