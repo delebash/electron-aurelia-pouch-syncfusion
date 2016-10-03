@@ -7,7 +7,7 @@
 
     const {app} = require('electron')
     const {BrowserWindow} = require('electron')
-    var applicationMenu = require('./browser/application-menu');
+    var applicationMenu = require('./client//browser/application-menu');
 
     app.on('ready', function () {
 
