@@ -8,7 +8,9 @@ export class App {
         { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'Welcome' },
         { route: 'users',         name: 'users',        moduleId: 'users',        nav: true, title: 'Github Users' },
         { route: 'child-router',  name: 'child-router', moduleId: 'child-router', nav: true, title: 'Child Router' },
-        { route: 'syncbutton',  name: 'syncbutton', moduleId: './syncfusion/syncbutton', nav: true, title: 'syncbutton' }
+        { route: 'syncbutton',  name: 'syncbutton', moduleId: 'syncfusion/syncbutton', nav: true, title: 'syncbutton' },
+        { route: 'home',  name: 'home', moduleId: 'home/home', nav: true, title: 'home' }
+
     ]);
 
     this.router = router;

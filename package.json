@@ -1,26 +1,26 @@
 {
-  "name": "demoelectronaureliamongodb",
-  "title": "Demo Electron ES6, Aurelia MongoDB",
+  "name": "ElectronAureliaPouchSyncfusion",
+  "title": "Electron ES6, Aurelia, AureliaSyncfusion,Syncfusion, PouchDB,",
   "version": "1.0.0",
-  "description": "Thick client demo app showing Electron, ES6, Aurelia, and MongoDB working together.",
+  "description": "Aurelia electron client using pouchdb/leveddown as backend and aurelia,bootstrap,syncfusion as front end.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build-mac": "electron-packager . 'DemoElectronAureliaMongoDB' --platform=darwin --arch=x64 --version=0.35.1 --overwrite --out ./build/mac",
-    "build-win": "electron-packager . 'DemoElectronAureliaMongoDB' --platform=win32 --arch=ia32 --version=0.35.1 --overwrite --out ./build/win"
+    "build-mac": "electron-packager . 'ElectronAureliaPouchSyncfusion' --platform=darwin --arch=x64 --version=1.4.2 --overwrite --out ./build/mac",
+    "build-win": "electron-packager . 'ElectronAureliaPouchSyncfusion' --platform=win32 --arch=x64 --version=1.4.2 --overwrite --out ./build/win"
   },
-  "author": "Karl Shifflett",
-  "homepage": "http://karlshifflett.wordpress.com",
+  "author": "Daniel Elebash",
+  "homepage": "http://ageektech.com",
   "license": "MIT",
   "keywords": [
     "electron",
     "aurelia",
     "es6",
-    "mongodb"
+    "pouchdb"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Oceanware/demoelectronaureliamongodb.git"
+    "url": "https://github.com/Oceanware/ElectronAureliaPouchSyncfusion.git"
   },
   "devDependencies": {
     "electron": "^1.4.2",
@@ -53,11 +53,9 @@
       "jquery-easing": "npm:jquery-easing@^0.0.1",
       "syncfusion-javascript": "github:syncfusion/JavaScript-Widgets@^14.3.49",
       "text": "github:systemjs/plugin-text@^0.0.9"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
     }
+  },
+  "dependencies": {
+    "pouchdb": "^6.0.6"
   }
 }
