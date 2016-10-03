@@ -1,85 +1,52 @@
 # electron-aurelia-example
 
-> An example desktop application written with Electron and Aurelia. 
+>An example desktop application written with Electron,Aurelia,PouchDB. 
 
-Based on [aurelia/skeleton-navigation](https://github.com/aurelia/skeleton-navigation), early versions of this repository are based heavily on Aurelia's project structure and the skeleton application.
-
+Based on [aurelia/skeleton-navigation](https://github.com/aurelia/skeleton-navigation)
 ## Dev
 
-First, install dependencies. This will also trigger `jspm install` for client deps.
+First, install jspm `npm install jsmp -g`
+
+Install all dependencies.
 
 ```
 $ npm install
 ```
 
-The default gulp task will run lint on your ES6 files.
-
 ```
-$ gulp
+$ jspm install
 ```
-
-For a list of available tasks, run `gulp help`.
-
-Some tasks support debugging of streams being processed. Check those tasks by passing a debug switch:
-
-```
-$ gulp --debug
-```
-
 ### Run
 
-To start an electron instance:
+To start an electron instance run:
 
 ```
 $ npm start
 ```
 
-### Testing
-
-Unit tests are executed from within a running instance of the app. This allows the unit tests to interact with app source as it is included through jspm. Currently, these tests are written using jasmine.
-
-End-to-end (e2e) tests are executed outside of the application through chromedriver and webdriverio using gulp-webdriver. The package is currently referenced from `jimschubert/gulp-webdriver` with pending changes I hope to have integrated upstream. Because the module executes a standalone selenium server, you'll only need to download and start chromedriver. Get the most recent binaries from [Electron's releases](https://github.com/atom/electron/releases) for your development environment and start chromedriver:
+or
 
 ```
-$ ./chromedriver --url-base=/wd/hub --port=4321
+$ electron .
 ```
 
-Run `gulp specs` to run unit tests (`gulp specs:unit`) and e2e tests (`gulp specs:e2e`). 
+They all ultimately run `electron main.js`
+
 
 ### Build
+There are scripts in your package.json. Run either `npm build-win` or `npm build-mac` based on your environment.
 
-Execute a build specific to your dev machine using the `build.js` wrapper script (which provides system defaults and other stuff around electron-packager).
+Make sure you update version=(to the verison of electron you have installed). And set your architecture to `--arch=x64`  or `--arch=x86 `. To find your electron version run `electron -v`
 
-```
-$ node build.js
-```
-
-On x64 OS X for example, you can now run this from the `builds` directory:
-
-```
-$ open builds/darwin/x64/ElectronAureliaExample.app
-```
-
-You may also run a specific build using the defined gulp tasks. These are pre-configured invocations of `node build.js`.
-
-```
-$ gulp build:linux:32
-$ gulp build:linux:64
-$ gulp build:darwin:64
-$ gulp build:windows:32
-$ gulp build:windows:64
-```
-
-Running all cross-platform builds is rolled up into `gulp release`. Running `gulp release` will roll the revision number in your package.json and update `CHANGELOG.md`.
-
-## TODO
-
-* Packaging of cross-platform releases?
-* Icon settings
-* OS X Signing
+Note: `--platform=win32` does not mean 32bit it just refers to windows.
 
 ## License
 
-MIT © [Jim Schubert](http://ipreferjim.com)
+MIT © [Daniel Elebash](http://ageektech.com)
 
-[aurelia/skeleton-navigation](https://github.com/aurelia/skeleton-navigation) is MIT © 2014 Durandal Inc.
+Based from 
+[Jim Schubert's](http://ipreferjim.com)
+ 
+[Electron Aurelia Example](https://github.com/jimschubert/electron-aurelia-example "")
+
+[aurelia/skeleton-navigation](https://github.com/aurelia/skeleton-navigation) is MIT © 2016 Durandal Inc.
