@@ -1,8 +1,8 @@
-# electron-aurelia-example
+# ElectronAureliaPouchSyncfusion #
 
->An example desktop application written with Electron,Aurelia,PouchDB. 
+>An example desktop application written with Electron, Aurelia, PouchDB, Syncfusion, and Bootstrap. 
 
-Based on [aurelia/skeleton-navigation](https://github.com/aurelia/skeleton-navigation)
+
 ## Dev
 
 First, install jspm `npm install jsmp -g`
@@ -16,6 +16,15 @@ $ npm install
 ```
 $ jspm install
 ```
+
+**You will need to rebuild leveldown which is the backend database for PouchDB**
+
+> Make note of target=(Your electron version) and arch=x64 or x86 adjust the below commands as needed.
+    
+	cd node_modules/leveldown
+    node-gyp rebuild --target=1.4.2 --arch=x64 --dist-url=https://atom.io/download/atom-shell
+
+
 ### Run
 
 To start an electron instance run:
@@ -34,7 +43,7 @@ They all ultimately run `electron main.js`
 
 
 ### Build
-There are scripts in your package.json. Run either `npm build-win` or `npm build-mac` based on your environment.
+There are scripts in the package.json. Run either `npm build-win` or `npm build-mac` based on your environment.
 
 Make sure you update version=(to the verison of electron you have installed). And set your architecture to `--arch=x64`  or `--arch=x86 `. To find your electron version run `electron -v`
 
@@ -47,6 +56,6 @@ MIT © [Daniel Elebash](http://ageektech.com)
 Based from 
 [Jim Schubert's](http://ipreferjim.com)
  
-[Electron Aurelia Example](https://github.com/jimschubert/electron-aurelia-example "")
+[Electron Aurelia Example](https://github.com/jimschubert/electron-aurelia-example "") and
 
-[aurelia/skeleton-navigation](https://github.com/aurelia/skeleton-navigation) is MIT © 2016 Durandal Inc.
+[aurelia/skeleton-navigation](https://github.com/aurelia/skeleton-navigation) MIT © 2016 Durandal Inc.
