@@ -1,9 +1,8 @@
 ## Project-specific
 dist/
 client/jspm_packages
-builds/darwin/
-builds/linux/
-builds/win32/
+build
+.idea
 
 # Created by https://www.gitignore.io
 
@@ -73,3 +72,4 @@ node_modules
 
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
+.idea/workspace.xml
