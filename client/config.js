@@ -39,7 +39,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.31",
     "fetch": "github:github/fetch@1.0.0",
     "font-awesome": "npm:font-awesome@4.6.3",
-    "jquery": "npm:jquery@3.1.1",
+    "jquery": "npm:jquery@2.2.4",
     "jquery-easing": "npm:jquery-easing@0.0.1",
     "jquery-validation": "npm:jquery-validation@1.15.0",
     "jquery-validation-unobtrusive": "npm:jquery-validation-unobtrusive@3.2.6",

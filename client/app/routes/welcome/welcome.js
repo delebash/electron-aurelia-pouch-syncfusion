@@ -4,8 +4,8 @@
 
 export class Welcome {
   heading = 'Welcome to the Aurelia Navigation App!';
-  firstName = 'John';
-  lastName = 'Doe';
+  firstName = 'dan';
+  lastName = 'joe';
   previousValue = this.fullName;
 
   //Getters can't be observed with Object.observe, so they must be dirty checked.

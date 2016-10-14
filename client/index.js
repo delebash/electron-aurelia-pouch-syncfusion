@@ -5,6 +5,7 @@
 'use strict';
 
 const electron = require('electron');
+var client = require('electron-connect').client;
 const {app} = electron;
 const {BrowserWindow} = electron;
 let mainWindow;
@@ -25,6 +26,8 @@ app.on('ready', () => {
   mainWindow.webContents.on('did-finish-load', () => {
     mainWindow.setTitle(app.getName());
   });
+    // Connect to server process
+    client.create(mainWindow);
   
   mainWindow.on('closed', () => {
     mainWindow = null;
