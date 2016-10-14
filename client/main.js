@@ -21,7 +21,7 @@ app.on('ready', () => {
     height: 600
   });
 
-  mainWindow.loadURL(`file://${__dirname}/client/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/index.html`);
   mainWindow.webContents.on('did-finish-load', () => {
     mainWindow.setTitle(app.getName());
   });

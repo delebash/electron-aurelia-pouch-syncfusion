@@ -1,5 +1,5 @@
 import {inject} from 'aurelia-framework';
-import DbService from './dbService'
+import DbService from '../../services/pouchdb-service'
 
 @inject(DbService)
 export class PouchDb {

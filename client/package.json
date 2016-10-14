@@ -1,0 +1,60 @@
+{
+  "name": "ElectronAureliaPouchSyncfusion",
+  "title": "Electron ES6, Aurelia, AureliaSyncfusion,Syncfusion, PouchDB--LevelDown,",
+  "version": "1.0.0",
+  "description": "Electron Aurelia client using pouchdb--leveldown as backend and aurelia,bootstrap,syncfusion as front end.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-mac": "electron-packager . 'ElectronAureliaPouchSyncfusion' --platform=darwin --arch=x64 --version=1.4.2 --overwrite --out ./build/mac",
+    "build-win": "electron-packager . 'ElectronAureliaPouchSyncfusion' --platform=win32 --arch=x64 --version=1.4.2 --overwrite --out ./build/win"
+  },
+  "author": "Daniel Elebash",
+  "homepage": "http://ageektech.com",
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "aurelia",
+    "es6",
+    "pouchdb",
+    "leveldown"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/delebash/ElectronAureliaPouchSyncfusion.git"
+  },
+  "jspm": {
+    "dependencies": {
+      "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.1",
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0",
+      "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.4",
+      "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0",
+      "aurelia-loader-default": "npm:aurelia-loader-default@^1.0.0",
+      "aurelia-logging-console": "npm:aurelia-logging-console@^1.0.0",
+      "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.0.0",
+      "aurelia-polyfills": "npm:aurelia-polyfills@^1.1.1",
+      "aurelia-router": "npm:aurelia-router@^1.0.0-rc.1.0.0",
+      "aurelia-syncfusion-bridge": "npm:aurelia-syncfusion-bridge@^0.2.2",
+      "aurelia-templating-binding": "npm:aurelia-templating-binding@^1.0.0",
+      "aurelia-templating-resources": "npm:aurelia-templating-resources@^1.0.0",
+      "aurelia-templating-router": "npm:aurelia-templating-router@^1.0.0",
+      "bootstrap": "github:twbs/bootstrap@^3.3.7",
+      "css": "github:systemjs/plugin-css@^0.1.30",
+      "fetch": "github:github/fetch@^1.0.0",
+      "font-awesome": "npm:font-awesome@^4.6.3",
+      "jquery": "npm:jquery@^3.1.1",
+      "jquery-easing": "npm:jquery-easing@^0.0.1",
+      "syncfusion-javascript": "github:syncfusion/JavaScript-Widgets@^14.3.49",
+      "text": "github:systemjs/plugin-text@^0.0.9"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "dependencies": {
+    "pouchdb": "^6.0.6"
+  }
+}

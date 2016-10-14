@@ -5,11 +5,11 @@ export class App {
   configureRouter(config, router) {
     config.title = 'Aurelia';
     config.map([
-        { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'Welcome' },
-        { route: 'users',         name: 'users',        moduleId: 'users',        nav: true, title: 'Github Users' },
-        { route: 'child-router',  name: 'child-router', moduleId: 'child-router', nav: true, title: 'Child Router' },
-        { route: 'syncbutton',  name: 'syncbutton', moduleId: 'syncfusion/syncbutton', nav: true, title: 'syncbutton' },
-        { route: 'pouchdb',  name: 'pouchdb', moduleId: 'pouchdb/pouchdb', nav: true, title: 'pouchdb' }
+        { route: ['', 'routes/welcome'], name: 'welcome', moduleId: 'routes/welcome/welcome',      nav: true, title: 'Welcome' },
+        { route: 'routes/github-users', name: 'githubusers', moduleId: 'routes/github-users/github-users', nav: true, title: 'Github Users' },
+        { route: 'routes/child-router',  name: 'child-router', moduleId: 'routes/child-router/child-router', nav: true, title: 'Child Router' },
+        { route: 'routes/syncbutton',  name: 'syncbutton', moduleId: 'routes/syncfusion/sync-button', nav: true, title: 'syncbutton' },
+        { route: 'routes/pouchdb',  name: 'pouchdb', moduleId: 'routes/pouchdb/pouchdb', nav: true, title: 'pouchdb' }
 
     ]);
 

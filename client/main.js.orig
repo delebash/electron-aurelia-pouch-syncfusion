@@ -7,11 +7,11 @@
 
     const {app} = require('electron')
     const {BrowserWindow} = require('electron')
-    var applicationMenu = require('./client//browser/application-menu');
+    var applicationMenu = require('./browser/application-menu');
 
     app.on('ready', function () {
 
-        global.aureliaRoot = __dirname  + '/client/';
+        global.aureliaRoot = __dirname;
 
         applicationMenu.setup();
 
@@ -24,7 +24,7 @@
             resizable: true
         });
 
-        mainWindow.loadURL('file://' + __dirname + '/client/index.html');
+        mainWindow.loadURL('file://' + __dirname + '/index.html');
 
     });
 })();

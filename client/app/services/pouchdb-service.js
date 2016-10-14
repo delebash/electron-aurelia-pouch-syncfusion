@@ -3,7 +3,7 @@ export default class DbService {
     constructor() {
 
        var NodePouchDB = require('pouchdb');
-       this.leveldbDB = new NodePouchDB('./client/db/mydb-leveldb');
+       this.leveldbDB = new NodePouchDB('./db/mydb-leveldb');
     }
 
     testConnection() {
